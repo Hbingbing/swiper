@@ -1,0 +1,164 @@
+.container{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.new-user-step-modal-box .step-bg1{
+  background: url('https://yl-static-cdn-app.ymcdn.cn/yl-photo/img/2018/09/08/e6A6BnqMzKq55FqGJ9pbJuQCv9QSBs.jpg?x-oss-process=image/resize,m_lfit,h_1000,w_1000') no-repeat center 140rpx, #fff;
+}
+.new-user-step-modal-box .step-bg2{
+  background: url('https://yl-static-cdn-app.ymcdn.cn/yl-photo/img/2018/09/08/yduYvl7v8HK4Xg9itNrmBVxpAS48AB.jpg?x-oss-process=image/resize,m_lfit,h_1000,w_1000') no-repeat center 140rpx, #fff;
+}
+.new-user-step-modal-box .step-bg3{
+  background: url('https://yl-static-cdn-app.ymcdn.cn/yl-photo/img/2018/09/08/ioiAQ9hLhjN3Rxb1ZKcmrKRYuyBvV5.jpg?x-oss-process=image/resize,m_lfit,h_1000,w_1000') no-repeat center 140rpx, #fff;
+}
+/* 上一页 */
+.pre-page-btn{
+  background-color: rgba(150,89,25,0.6);
+  border: 2rpx solid #fff;
+  color: #fff;
+}
+/* 三步骤卡片 */
+.new-user-step-modal-box{
+  opacity: 1;
+  padding-top: 126rpx;
+}
+.new-user-step-modal-box .close{
+  width: 72rpx;
+  height: 72rpx;
+  position: absolute;
+  top: 38rpx;
+  left: 588rpx;
+}
+.steps-scroll-box{
+  white-space: nowrap;
+}
+.new-user-step-modal-box .step{
+  width: 572rpx;
+  padding: 48rpx 46rpx 82rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  padding-bottom: 684rpx;
+  background-size: 478rpx 572rpx;
+  margin: 0 16rpx;
+  display: inline-block;
+  text-align: center;
+}
+.steps-scroll-box .step:nth-child(1){
+  margin: 0 16rpx 0 90rpx;
+}
+.steps-scroll-box .step:nth-child(3){
+  margin: 0 90rpx 0 16rpx;
+}
+.pre-page-btn{
+  width: 214rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  border-radius: 49rpx;
+  margin-top:56rpx;
+  padding: 0;
+  text-align: center;
+  margin: 56rpx 16rpx 0 38rpx;
+  opacity: 0;
+}
+/* 上一页动画 */
+.pre-page-btn-ani{
+  animation: prePageBtn 0.3s cubic-bezier(0.42, 0, 0.58, 1) both;
+}
+@keyframes prePageBtn{
+  to{
+    opacity: 1;
+  }
+}
+/* 反向动画 */
+.pre-page-btn-ani2{
+  animation: prePageBtn2 0.3s cubic-bezier(0.42, 0, 0.58, 1) both;
+}
+@keyframes prePageBtn2{
+  to{
+    opacity: 0;
+  }
+}
+/* 下一页动画 */
+.next-page-btn{
+  width: 510rpx;
+  margin-top: 56rpx;
+}
+.next-page-btn-ani{
+  animation: nextPageBtn 0.25s cubic-bezier(0.42, 0, 0.58, 1) both;
+}
+@keyframes nextPageBtn{
+  to{
+    width: 446rpx;
+    transform: translateX(0);
+  }
+}
+/* 反向动画 */
+.next-page-btn-ani2{
+  animation: nextPageBtn2 0.25s cubic-bezier(0.42, 0, 0.58, 1) both;
+}
+@keyframes nextPageBtn2{
+  from{
+    width: 446rpx;
+  }
+  to{
+    width: 510rpx;
+  }
+}
+
+/* 下一页 */
+.scrollStep2{
+  animation: scrollStep2 0.3s both;
+}
+@keyframes scrollStep2{
+  to{
+    transform: translate(-606rpx);
+  }
+}
+.scrollStep3{
+  animation: scrollStep3 0.3s both;
+  transform: translate(-606rpx);
+}
+@keyframes scrollStep3{
+  to{
+    transform: translate(-1212rpx);
+  }
+}
+/* 上一页 */
+.scrollStep22{
+  animation: scrollStep22 0.3s both;
+  transform: translate(-1212rpx);
+}
+@keyframes scrollStep22{
+  to{
+    transform: translate(-606rpx);
+  }
+}
+.scrollStep21{
+  animation: scrollStep23 0.3s both;
+  transform: translate(-606rpx);
+}
+@keyframes scrollStep23{
+  to{
+    transform: translate(0);
+  }
+}
+.flex{
+  display: flex;
+}
+.btn.primary {
+  color: #47230B;
+  background-color: #FFCF86;
+  box-shadow: 0rpx 4rpx 12rpx RGBA(255, 192, 73, 0.5);
+}
+.btn.largeplus {
+  height: 98rpx;
+  line-height: 98rpx;
+  border-radius: 49rpx;
+  font-size: 38rpx;
+  padding: 0 62rpx;
+}

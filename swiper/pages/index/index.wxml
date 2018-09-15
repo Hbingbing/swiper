@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="exchange-modal new-user-step-modal-box" wx:if="{{firstAlbum==1}}"  catchtap="hideStepCardModal" data-style="modal" catch:touchmove="javascript:void(0)">
+    <image src="../../images/close.png" class="close" catchtap="hideStepCardModal" data-style="closeicon"></image>
+    <view scroll-x="false" class="steps-scroll-box  {{nextPage&&stepScrollLeft=='card2'?'scrollStep2':''}} {{nextPage&&stepScrollLeft=='card3'?'scrollStep3':''}} {{prePage&&stepScrollLeft=='card2'?'scrollStep22':''}} {{prePage&&stepScrollLeft=='card1'?'scrollStep21':''}}" scroll-with-animation="true" style="width:1780rpx;" catchtap="javascript:void(0)" catch:touchstart="touchStart" catch:touchend="touchEnd">
+      <view class="font-44 color-primary step step-bg1" data-id="card1">让生活更美好</view>
+      <view class="font-44 color-primary step step-bg2" data-id="card2">好运常相随</view>
+      <view class="font-44 color-primary step step-bg3" data-id="card3">做最好的自己</view>
+    </view>
+    <view class="flex">
+      <button wx:if="{{stepScrollLeft!='card1'}}" class="pre-page-btn {{stepScrollLeft!='card1'?'pre-page-btn-ani':'pre-page-btn-ani2'}}" catchtap="prePageFun">上一页</button>
+      <button class="btn primary largeplus next-page-btn {{stepScrollLeft && stepScrollLeft!='card1'?'next-page-btn-ani':'next-page-btn-ani2'}}" hover-class='hover' catchtap="nextPageFun">
+        <text wx:if="{{stepScrollLeft=='card3'}}">我知道了</text>
+        <text wx:else>下一页</text>
+      </button>
+    </view>
+  </view>
+</view>
